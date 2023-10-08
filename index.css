@@ -1,0 +1,746 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --fontSmall: 12px;
+    --fontSize: 18px;
+    --fontIcon: 25px;
+    --red: #198754;
+    --redDark: rgba(0, 100, 0, 0.479);
+    --white: #e0ffff;
+    --black: #000000;
+    --colorBorder: #f5deb3;
+    --fontKhmer: 'kantumruy';
+    --fontEnglish: 'Exo', sans-serif;
+}
+body{
+    background-color: var(--white);
+}
+@font-face {
+    font-family: var(--fontKhmer);
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://natt.realteethclinic.com/assets/font/Kantumruy-Regular.ttf) format('woff2');
+    unicode-range: U+1780-17FF, U+200C, U+25CC;
+}
+.header{
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--red);
+    display: flex;
+    position: relative;
+}
+.header img{
+    width: 65px;
+    height: 60px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.txt a{
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--fontEnglish);
+    font-size: var(--fontSize);
+}
+.header .header-right{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    display: flex;
+}
+.header-right .name{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.header-right .name p{
+    font-size: var(--fontSize);
+    font-family: var(--fontKhmer);
+    font-family: var(--fontEnglish);
+    color: var(--white);
+}
+
+.header-right .icon{
+    width: 20%;
+    height: 100%;
+    display: flex;
+}
+.icon .icon-full{
+    width: 70%;
+    height: 100%;
+    display: flex;
+}
+.icon-full .icon-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--fontIcon);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.icon-full .icon-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.icon-full .icon-right img{
+    width: 25px;
+    height: 25px;
+    margin-top: -3px;
+}
+.menu-icon{
+    width: 100px;
+    /* height: 80px; */
+    overflow: hidden;
+    background-color: #fff0f5;
+    z-index: 100;
+    display: none;
+    position: absolute;
+    right: 2%;
+    top: 9.2%;
+    border-radius: 0px 0px 3px 3px;
+    border: 1px solid var(--redDark);
+    box-shadow: 0 3px 8px 0 var(--colorBorder),
+    0 6px 14px 0 var(--colorBorder);
+}
+.menu-icon ul li{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    transition: .2s all;
+}
+.menu-icon ul li:hover{
+    background-color: var(--red);
+    transform: scale(103%);
+    color: var(--white);
+}
+.menu-icon ul li a:hover{
+    color: var(--white);
+    opacity: 1;
+}
+.menu-icon ul li a{
+    text-decoration: none;
+    color: var(--black);
+    font-family: var(--fontKhmer);
+    font-size: var(--fontSmall);
+}
+
+
+/* content-Box */
+.content-box{
+    width: 1200px;
+    height: 300px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px 10px 10px 10px;
+}
+.content-box .content{
+    width: 100%;
+    height: 100%;
+}
+.content .content-left{
+    width: 23%;
+    height: 300px;
+    float: left;
+    background-color: var(--white);
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid var(--redDark);
+    box-shadow: 0 3px 8px 0 var(--colorBorder),
+    0 6px 14px 0 var(--colorBorder);
+
+}
+.content .content-left:hover{
+    opacity: .9;
+    transform: scale(99.8%);
+}
+.content-left img{
+    width: 150px;
+    height: 150px;
+    margin: 20px 0 0 65px;
+}
+.content-left .box-txt{
+    text-align: center;
+}
+.content-left .box-txt p{
+    margin-top: 20px;
+    color: var(--black);
+}
+
+.content .content-left1{
+    width: 23%;
+    height: 300px;
+    float: left;
+    margin-left: 2.5%;
+    background-color: var(--white);
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid var(--redDark);
+    box-shadow: 0 3px 8px 0 var(--colorBorder),
+    0 6px 14px 0 var(--colorBorder);
+}
+.content-left1 img {
+    width: 150px;
+    height: 150px;
+    margin: 20px 0 0 65px;
+}
+
+.content-left1 .box-txt {
+    text-align: center;
+}
+
+.content-left1 .box-txt p {
+    margin-top: 20px;
+    color: var(--black);
+}
+.content .content-left1:hover {
+    opacity: .9;
+    transform: scale(99.8%);
+}
+
+.content .content-right{
+    width: 23%;
+    height: 300px;
+    float: right;
+    background-color: var(--white);
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid var(--redDark);
+    box-shadow: 0 3px 8px 0 var(--colorBorder),
+    0 6px 14px 0 var(--colorBorder);
+}
+.content-right img {
+    width: 150px;
+    height: 150px;
+    margin: 20px 0 0 65px;
+}
+
+.content-right .box-txt {
+    text-align: center;
+}
+
+.content-right .box-txt p {
+    margin-top: 20px;
+    color: var(--black);
+}
+
+.content .content-right:hover {
+    opacity: .9;
+    transform: scale(99.8%);
+}
+
+
+.content .content-right1{
+    width: 23%;
+    height: 300px;
+    float: right;
+    margin-right: 2.5%;
+    background-color: var(--white);
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid var(--redDark);
+    box-shadow: 0 3px 8px 0 var(--colorBorder),
+    0 6px 14px 0 var(--colorBorder);
+}
+.content-right1 img {
+    width: 150px;
+    height: 150px;
+    margin: 20px 0 0 65px;
+}
+
+.content-right1 .box-txt {
+    text-align: center;
+}
+
+.content-right1 .box-txt p {
+    margin-top: 20px;
+    color: var(--black);
+}
+
+.content .content-right1:hover {
+    opacity: .9;
+    transform: scale(99.8%);
+}
+
+/* ============================== */
+.content-box1 {
+    width: 1200px;
+    height: 300px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.content-box .content {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* media screen responsive */
+@media screen and (max-width: 320px) and (max-width: 480px) {
+    .header {
+        width: 100%;
+    }
+
+    .header img {
+        width: 50px;
+        height: 45px;
+    }
+
+    .header .txt a {
+        font-size: 10px;
+    }
+
+    .header .header-right .name {
+        display: none;
+    }
+
+    .header-right .icon {
+        margin-left: 90px;
+    }
+
+    .icon .icon-full .icon-left i {
+        font-size: 18px;
+    }
+
+    .icon .icon-full .icon-right img {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* menu */
+    .menu-icon {
+        width: 60px;
+        margin-top: 0px;
+        margin-right: 8px;
+    }
+
+    .menu-icon ul li a {
+        font-size: 9px;
+    }
+
+    /* content Box */
+    .content-box {
+        width: 100%;
+        margin-top: 15px;
+        padding: 0px 5px;
+    }
+
+    .content-box .content .content-left {
+        width: 49%;
+        height: 150px;
+        float: left;
+    }
+
+    .content-box .content .content-left img {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        top: 14%;
+        left: 6%;
+    }
+
+    .content-box .content .content-left .box-txt p {
+        font-size: 12px;
+        position: absolute;
+        top: 33%;
+        left: 16%;
+    }
+
+    /* === */
+    .content-box .content .content-left1 {
+        width: 49%;
+        height: 150px;
+        float: right;
+        margin-top: -48.5%;
+    }
+
+    .content-box .content .content-left1 img {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        top: 14%;
+        right: 15%;
+    }
+
+    .content-box .content .content-left1 .box-txt p {
+        font-size: 12px;
+        position: absolute;
+        top: 33%;
+        right: 9%;
+    }
+
+    /* === */
+    .content-box .content .content-right {
+        width: 49%;
+        height: 150px;
+        float: left;
+        margin-top: 15px;
+    }
+
+    .content-box .content .content-right img {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        top: 49%;
+        left: 6%;
+    }
+
+    .content-box .content .content-right .box-txt p {
+        font-size: 12px;
+        position: absolute;
+        top: 68%;
+        left: 20%;
+    }
+
+    /* === */
+    .content-box .content .content-right1 {
+        width: 47.3%;
+        height: 150px;
+        float: right;
+        position: absolute;
+        top: 46.7%;
+        right: -1%;
+    }
+
+    .content-box .content .content-right1 img {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        top: 5%;
+        left: 6%;
+    }
+
+    .content-box .content .content-right1 .box-txt p {
+        font-size: 12px;
+        position: absolute;
+        top: 68%;
+        left: 30%;
+    }
+
+    /* content-box1 */
+    .content-box1 {
+        width: 100%;
+        padding: 0px 5px;
+    }
+
+    .content-box1 .content .content-left {
+        width: 49%;
+        height: 150px;
+        float: left;
+    }
+
+    .content-box1 .content .content-left img {
+        width: 70px;
+        height: 70px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .content-box1 .content .content-left .box-txt p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    /* ==== */
+    .content-box1 .content .content-left1 {
+        width: 49%;
+        height: 150px;
+        float: right;
+        margin-top: 15px;
+    }
+
+    .content-box1 .content .content-left1 img {
+        width: 70px;
+        height: 70px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .content-box1 .content .content-left1 .box-txt p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    /* ==== */
+    .content-box1 .content .content-right {
+        width: 49%;
+        height: 150px;
+        float: left;
+        margin-top: -48%;
+    }
+
+    .content-box1 .content .content-right img {
+        width: 70px;
+        height: 70px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .content-box1 .content .content-right .box-txt p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    /* ==== */
+    .content-box1 .content .content-right1 {
+        width: 47.3%;
+        height: 150px;
+        float: right;
+        position: absolute;
+        top: 82.6%;
+        right: -1%;
+        margin-top: -2%;
+    }
+
+    .content-box1 .content .content-right1 img {
+        width: 70px;
+        height: 70px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .content-box1 .content .content-right1 .box-txt p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+}
+
+/* @media screen and (max-width: 481px) and (max-width: 768px) {
+    .header {
+        width: 100%;
+    }
+
+    .header img {
+        width: 50px;
+        height: 45px;
+    }
+
+    .header .txt a {
+        font-size: 10px;
+    }
+
+    .header .header-right .name {
+        display: none;
+    }
+
+    .header-right .icon {
+        margin-left: 90px;
+    }
+
+    .icon .icon-full .icon-left i {
+        font-size: 18px;
+    }
+
+    .icon .icon-full .icon-right img {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* menu */
+    .menu-icon {
+        width: 60px;
+        margin-top: 0px;
+        margin-right: 8px;
+    }
+
+    .menu-icon ul li a {
+        font-size: 9px;
+    }
+
+    /* content Box */
+    .content-box {
+        width: 100%;
+        margin-top: 15px;
+        padding: 0px 5px;
+    }
+
+    .content-box .content .content-left {
+        width: 49%;
+        height: 150px;
+        float: left;
+    }
+
+    .content-box .content .content-left img {
+        width: 70px;
+        height: 70px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .content-box .content .content-left .box-txt p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    /* === */
+    .content-box .content .content-left1 {
+        width: 49%;
+        height: 150px;
+        float: right;
+        margin-top: -48.5%;
+    }
+
+    .content-box .content .content-left1 img {
+        width: 70px;
+        height: 70px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .content-box .content .content-left1 .box-txt p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    /* === */
+    .content-box .content .content-right {
+        width: 49%;
+        height: 150px;
+        float: left;
+        margin-top: 15px;
+    }
+
+    .content-box .content .content-right img {
+        width: 70px;
+        height: 70px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .content-box .content .content-right .box-txt p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    /* === */
+    .content-box .content .content-right1 {
+        width: 47.3%;
+        height: 150px;
+        float: right;
+        position: absolute;
+        top: 46.7%;
+        right: -1%;
+    }
+
+    .content-box .content .content-right1 img {
+        width: 70px;
+        height: 70px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .content-box .content .content-right1 .box-txt p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    /* content-box1 */
+    .content-box1 {
+        width: 100%;
+        padding: 0px 5px;
+    }
+
+    .content-box1 .content .content-left {
+        width: 49%;
+        height: 150px;
+        float: left;
+    }
+
+    .content-box1 .content .content-left img {
+        width: 70px;
+        height: 70px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .content-box1 .content .content-left .box-txt p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    /* ==== */
+    .content-box1 .content .content-left1 {
+        width: 49%;
+        height: 150px;
+        float: right;
+        margin-top: 15px;
+    }
+
+    .content-box1 .content .content-left1 img {
+        width: 70px;
+        height: 70px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .content-box1 .content .content-left1 .box-txt p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    /* ==== */
+    .content-box1 .content .content-right {
+        width: 49%;
+        height: 150px;
+        float: left;
+        margin-top: -48%;
+    }
+
+    .content-box1 .content .content-right img {
+        width: 70px;
+        height: 70px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .content-box1 .content .content-right .box-txt p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    /* ==== */
+    .content-box1 .content .content-right1 {
+        width: 47.3%;
+        height: 150px;
+        float: right;
+        position: absolute;
+        top: 82.6%;
+        right: -1%;
+        margin-top: -2%;
+    }
+
+    .content-box1 .content .content-right1 img {
+        width: 70px;
+        height: 70px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .content-box1 .content .content-right1 .box-txt p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+} */
