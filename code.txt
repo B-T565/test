@@ -1,3 +1,221 @@
+
+@media (max-width: 475px) {
+    .header {
+        width: 100%;
+    }
+
+    .header img {
+        width: 50px;
+        height: 45px;
+    }
+
+    .header .txt a {
+        font-size: 10px;
+    }
+
+    .header .header-right .name {
+        display: none;
+    }
+
+    .header-right .icon {
+        margin-left: 90px;
+    }
+
+    .icon .icon-full .icon-left i {
+        font-size: 18px;
+    }
+
+    .icon .icon-full .icon-right img {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* menu */
+    .menu-icon {
+        width: 60px;
+        margin-top: -15px;
+    }
+
+    .menu-icon ul li a {
+        font-size: 9px;
+    }
+
+    /* content Box */
+    .content-box {
+        width: 100%;
+        margin-top: 15px;
+        padding: 0px 5px;
+    }
+
+    .content-box .content .content-left {
+        width: 49%;
+        height: 150px;
+        float: left;
+    }
+
+    .content-box .content .content-left img {
+        width: 70px;
+        height: 70px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .content-box .content .content-left .box-txt p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    /* === */
+    .content-box .content .content-left1 {
+        width: 49%;
+        height: 150px;
+        float: right;
+        margin-top: -55.4%;
+    }
+
+    .content-box .content .content-left1 img {
+        width: 70px;
+        height: 70px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .content-box .content .content-left1 .box-txt p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    /* === */
+    .content-box .content .content-right {
+        width: 49%;
+        height: 150px;
+        float: left;
+        margin-top: 15px;
+    }
+
+    .content-box .content .content-right img {
+        width: 70px;
+        height: 70px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .content-box .content .content-right .box-txt p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    /* === */
+    .content-box .content .content-right1 {
+        width: 47.3%;
+        height: 150px;
+        float: right;
+        position: absolute;
+        top: 34.5%;
+        right: -1%;
+    }
+
+    .content-box .content .content-right1 img {
+        width: 70px;
+        height: 70px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .content-box .content .content-right1 .box-txt p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    /* content-box1 */
+    .content-box1 {
+        width: 100%;
+        padding: 0px 5px;
+    }
+
+    .content-box1 .content .content-left {
+        width: 49%;
+        height: 150px;
+        float: left;
+    }
+
+    .content-box1 .content .content-left img {
+        width: 70px;
+        height: 70px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .content-box1 .content .content-left .box-txt p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    /* ==== */
+    .content-box1 .content .content-left1 {
+        width: 49%;
+        height: 150px;
+        float: right;
+        margin-top: -55.4%;
+    }
+
+    .content-box1 .content .content-left1 img {
+        width: 70px;
+        height: 70px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .content-box1 .content .content-left1 .box-txt p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    /* ==== */
+    .content-box1 .content .content-right {
+        width: 49%;
+        height: 150px;
+        float: left;
+        margin-top: 15px;
+    }
+
+    .content-box1 .content .content-right img {
+        width: 70px;
+        height: 70px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .content-box1 .content .content-right .box-txt p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    /* ==== */
+    .content-box1 .content .content-right1 {
+        width: 47.3%;
+        height: 150px;
+        float: right;
+        position: absolute;
+        top: 82.6%;
+        right: -1%;
+        margin-top: 5.5%;
+    }
+
+    .content-box1 .content .content-right1 img {
+        width: 70px;
+        height: 70px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .content-box1 .content .content-right1 .box-txt p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+}
+
+
 @media (max-width: 640px) {
     .header {
         max-width: 475px;
