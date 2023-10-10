@@ -146,8 +146,13 @@ body {
         grid-template-columns: repeat( 2 ,1fr);
         padding: 0px 10px;
     }
+    .header-left img{
+        margin-left: 10px;
+    }
     .header-left p{
-        font-size: var(--fontSize);
+        font-size: 14px;
+        margin-left: 70px;
+        margin-top: -42px;
     }
     .header-right{
         display: none;
@@ -155,6 +160,21 @@ body {
     .menu{
         margin-right: 80px;
     }
+    .menu i{
+        float: left;
+    }
+    .menu nav{
+        position: absolute;
+        top: 43.5%;
+    }
+    .container-left img{
+        width: 60px;
+        height: 60px;
+    }
+    .container-left .txt p{
+        font-size: 12px;
+    }
+
 }
 
 @media screen and (min-width: 600px) {
